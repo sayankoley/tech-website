@@ -10,7 +10,7 @@ import { ACTION, Appcontext, Initial, reducer } from './components/reducer'
 function App() {
   const [state, dispatch] = useReducer(reducer, Initial)
   
-  const Api = "http://hn.algolia.com/api/v1/"
+  const Api = "https://hn.algolia.com/api/v1/"
   const getData = (api) => {
     dispatch({ type: ACTION.SETloading })
     fetch(api)
